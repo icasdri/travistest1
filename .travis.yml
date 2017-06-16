@@ -5,4 +5,5 @@ env:
 
 script:
   - echo $TESTVAR
-  - echo $TESTENCVAR
+  - echo $TESTENCVAR > enc.txt
+  - cat enc.txt
