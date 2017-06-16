@@ -4,6 +4,7 @@ env:
     - secure: "VbArmR1FliV5nQj7EOJhKLZfAsPoKpKMi47MKFo5yJXU0D/Vf9bQscXDzT3jmeinXlw2WBxTbX1FHjyHXhlmznFuh7N7Hk7ljgy3pcURLh5JDGWQmZIprOwGRwYVMO8Q/wMreh8i65j0OEXX1qtKIhKg1XAIpBeLvk3Z8tid3eQPpBjWWupG9b8uJpveN0WCEPMjeFZAVfn8DZXdbmIlbbn6da7fmwQh2e4S0VhjuzYYcX5N2W/jkv7tsfGZDzkL6VE5SLKGRK+QuZVkVGCwvkbSxTzQ/GIxkcQErDYM6TALDrYVIv1TFJoEWwk0Ida/woxel4zaeoGeXCjP7eDwwImJ63WOSedpAIEUoO+mlqTxK4lKCRSw0mNeprZ07U1rJHwtTWPnp2ivlmQA/l6FmKOfU0PYDnuUlpbyfzHTjmAVbuQj4BqfJGkHx8P4Q+GNcdJF8A5t31NuKeQwex7D0Jo/JTu00EbyEhRVgMOYLDU/Nt5SJbAV+WV3cWQc/P3e8AqOJhaZYcoWkmZ6oBSlwTIbvWgf4sn/+fcDQl6HZDXKVh1WKB3FVYO44UX/mCphlxTW+7OmcC/qM4HAwGvjKVKNXLrvjArOim0Xxw/F4gjLzPEyZScXOm8YZ4vTVF42TwNsfcoU5ikyQkN/TbVDDF2HL2uBsY0WAGeM9jzT4hE="
 
 script:
-  - echo $TESTVAR
-  - echo $TESTENCVAR > enc.txt
-  - cat enc.txt
+  - echo $TESTVAR >> test.txt
+  - echo $TESTENCVAR >> test.txt
+  - echo 'Hello World!' >> test.txt
+  - cat test.txt
